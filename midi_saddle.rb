@@ -24,6 +24,28 @@ puts "Connecting to Sphero..."
 sphero = Sphero.new ENV['sphero'] || ARGV[0] || "/dev/tty.Sphero-GRR-RN-SPP"
 puts "Connected to Sphero"
 
+def sphero_template
+  @sphero_template ||= ERB.new %{
+ .----------------.
+| .--------------. |
+| |     ____     | |
+| |   .'    `.   | |
+| |  /  .--.  \\  | |  <%= @message %>
+| |  | |    | |  | |
+| |  \\  `--'  /  | |
+| |   `.____.'   | |
+| |              | |
+| '--------------' |
+ '----------------'
+}
+end
+
+def say(message)
+  @message = message
+  puts sphero_template.result
+end
+
+
 NOTES = { "C" => %{
  .----------------.
 | .--------------. |
