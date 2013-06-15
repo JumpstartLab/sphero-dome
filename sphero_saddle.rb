@@ -23,6 +23,12 @@ puts "Connecting to Sphero..."
 sphero = Sphero.new ENV['sphero'] || ARGV[0] || "/dev/tty.Sphero-GRR-RN-SPP"
 puts "Connected to Sphero"
 
+def random_color
+  color = Sphero::COLORS.sample
+  puts "Picked Color: #{color}"
+  color
+end
+
 def sphero_template
   @sphero_template ||= ERB.new %{
  .----------------.
