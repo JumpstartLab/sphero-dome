@@ -3,11 +3,11 @@
 # | .--------------. |  I AM SPHERO! I can do a lot of things:
 # | |     ____     | |
 # | |   .'    `.   | |  sphero.color("azure")
-# | |  /  .--.  \  | |  sphero.roll(SPEED,DIRECTION_IN_DEGREES)
-# | |  | |    | |  | |  sphero.heading = DIRECTION_IN_DEGREES
-# | |  \  `--'  /  | |  sphero.keep_going(TIME_IN_SECONDS)
-# | |   `.____.'   | |  sphero.stop
-# | |              | |
+# | |  /  .--.  \  | |  sphero.color(random_color)
+# | |  | |    | |  | |  sphero.roll(SPEED, DIRECTION_IN_DEGREES)
+# | |  \  `--'  /  | |  sphero.heading = DIRECTION_IN_DEGREES
+# | |   `.____.'   | |  sphero.keep_going(TIME_IN_SECONDS)
+# | |              | |  sphero.stop
 # | '--------------' |
 #  '----------------'
 
