@@ -20,8 +20,8 @@ puts "Connecting to Sphero..."
 #   end
 # end
 
+sphero = Sphero.new ENV['sphero'] || ARGV[0] || "/dev/tty.Sphero-BOO-RN-SPP"
 
-sphero = Sphero.new ENV['sphero'] || ARGV[0] || "/dev/tty.Sphero-GRR-RN-SPP"
 puts "Connected to Sphero"
 
 def random_color
@@ -194,7 +194,7 @@ MIDI.using(input) do
     end
 
     begin
-      eval File.read("music.rb")
+      eval File.read("midi.rb")
     rescue Exception => exception
       puts "Exception: #{exception}"
     end
