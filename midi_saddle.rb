@@ -25,8 +25,8 @@ sphero = Sphero.new ENV['sphero'] || ARGV[0] || "/dev/tty.Sphero-BOO-RN-SPP"
 puts "Connected to Sphero"
 
 def random_color
-  color = Sphero::COLORS.sample
-  puts "Picked Color: #{color}"
+  color = Sphero::COLORS.keys.sample
+  puts "\n\tPicked Color: #{color}"
   color
 end
 
