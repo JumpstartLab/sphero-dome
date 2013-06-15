@@ -20,6 +20,8 @@ GEM
     midi-message (0.3.2)
     midi-nibbler (0.1.1)
       midi-message
+    midi-winmm (0.1.10)
+      ffi (>= 1.0)
     rb-fsevent (0.9.3)
     rb-inotify (0.9.0)
       ffi (>= 0.5.0)
@@ -35,3 +37,4 @@ DEPENDENCIES
   hybridgroup-sphero
   listen
   micromidi
+  midi-winmm
