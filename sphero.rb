@@ -4,9 +4,9 @@
 # | |     ____     | |
 # | |   .'    `.   | |  sphero.color("azure")
 # | |  /  .--.  \  | |  sphero.roll(SPEED,DIRECTION_IN_DEGREES)
-# | |  | |    | |  | |  sphero.keep_going(TIME_IN_SECONDS)
-# | |  \  `--'  /  | |  sphero.stop
-# | |   `.____.'   | |
+# | |  | |    | |  | |  sphero.heading = DIRECTION_IN_DEGREES
+# | |  \  `--'  /  | |  sphero.keep_going(TIME_IN_SECONDS)
+# | |   `.____.'   | |  sphero.stop
 # | |              | |
 # | '--------------' |
 #  '----------------'
