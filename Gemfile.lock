@@ -9,7 +9,7 @@ GEM
       rb-fsevent (>= 0.9.3)
       rb-inotify (>= 0.9)
       rb-kqueue (>= 0.2)
-    midi (0.0.9)
+    micromidi (0.0.9)
       midi-eye (>= 0.1.3)
       midi-message (>= 0.2.2)
       unimidi (>= 0.2.3)
@@ -34,4 +34,4 @@ PLATFORMS
 DEPENDENCIES
   hybridgroup-sphero
   listen
-  midi
+  micromidi

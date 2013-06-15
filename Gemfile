@@ -1,5 +1,5 @@
 source "https://rubygems.org"
 
-gem 'midi'
+gem 'micromidi'
 gem 'hybridgroup-sphero'
 gem 'listen'
