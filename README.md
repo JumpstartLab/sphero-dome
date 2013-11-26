@@ -15,7 +15,7 @@ commands written into the `sphero.rb` file whenever they are saved.
 ### Run
 
 ```
-$ ruby sphero_saddle.rb
+$ bundle exec ruby sphero_saddle.rb
 ```
 
 ### Write
